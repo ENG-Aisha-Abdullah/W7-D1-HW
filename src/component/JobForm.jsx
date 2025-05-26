@@ -32,11 +32,12 @@ function JobForm() {
       });
     }
   };
+ 
 
   return (
-    <div className="bg-gray-200 h-screen w-full flex justify-center items-center">
+    <div className="bg-gray-200 h-screen w-full flex justify-center items-center ">
       <form
-        className="container bg-gray-100 shadow-2xl rounded-2xl w-[90%] p-8 flex flex-col gap-5"
+        className="container bg-gray-100 shadow-2xl rounded-2xl w-[90%] p-8 flex flex-col gap-5 justify-center md:w-150"
         onSubmit={handleSubmit}
       >
         <h1 className="text-black text-3xl font-bold">Jop Register</h1>
@@ -124,7 +125,7 @@ function JobForm() {
             className="text-gray-500 font-bold text-xl min-w-30 block whitespace-nowrap"
             htmlFor="description"
           >
-            Job Description
+            Description
           </label>
           <textarea
             value={description}
